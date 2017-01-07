@@ -1,13 +1,13 @@
 # WPF요소의 계층관계에 대해서 배우자!
 
-## 1. Logical and Visual Tree (논리와 시각화 트리)
+## 1. Logical and Visual Tree
 
-![논리 및 시각화 트리](/assets/trees.jpg)
+![logical and visual tree](/assets/trees.jpg)
 
 
 ### 개요
 
-WPF 사용자 인터페이스의 요소들은 계층적으로 관계를 갖는다. 이 관계를 논리적 구조(LogicalTree)라고 부른다. 요소 하나의 템플릿은 다수의 시각화 요소를 갖는다. 이 구조를 시각화 구조(VisualTree)라고 부른다. 이 두가지 구조에 차이가 있는데, 몇몇은 논리적 요소만 필요로하고, 그외에는 모든 요소가 필요로하기 때문이다.
+WPF 사용자 인터페이스의 요소들은 계층적으로 관계를 갖는다. 이 관계를 논리적 구조(LogicalTree)라고 부른다. 요소 하나의 템플릿은 다수의 시각화 요소를 갖는다. 이 구조를 시각적 구조(VisualTree)라고 부른다. 이 두가지 구조에 차이가 있는데, 몇몇은 논리적 요소만 필요로하고, 그외에는 모든 요소가 필요로하기 때문이다.
 
 ```
 <Window>
@@ -20,30 +20,25 @@ WPF 사용자 인터페이스의 요소들은 계층적으로 관계를 갖는�
 
 ### 왜 두개의 다른 종류의 트리가 필요할까?
 
-WPF 컨트롤은 보기보다 여러개의 원시적인 컨트롤로 구성되어있다. 예를 들어보자. 버튼의 경우border(외곽선), rectangle(사각형), content presenter(내용을 표시하는 부분)으로 구성되어있다. 이 컨트롤들은 버튼의 시각화 자식들이다.
-
+WPF 컨트롤은 보기보다 여러개의 원시적인 컨트롤로 구성되어있다. 예를 들어보자. 버튼의 경우border(외곽선), rectangle(사각형), content presenter(내용을 표시하는 부분)으로 구성되어있다. 이 컨트롤들은 버튼의 visual children이다.
 WPF가 버튼을 만들때 그 요소들은 모습이 없지만, visual tree를 통해 반복되고 visual children을 만든다.또한, 이 계층적 관계는 hit-testing(요소를 선택했다고 인식하는것), 레이아웃, 기타등등을 수행하는데 사용되곤 한다.
-
-But sometimes you are not interested in the borders and rectangles of a controls' template. Particulary because the template can be replaced, and so you should not relate on the visual tree structure! Because of that you want a more robust tree that only contains the "real" controls - and not all the template parts. And that is the eligibility for the logical tree.
-그러나 가끔은 컨트롤 템플릿의 외곽선이나 사각형에 관심이 없을때가 있다. 따라서, 템플릿을 부분적으로 바꿀수 있기에 Visual Tree 구조와 관련되어서는 안된다. 템플릿 부분 전부가 아닌 "실제" 컨트롤을 포함하는 보다 더 완벽한 tree를 원하기 때문에 그것이 Logical tree가 적격이다.
+그러나 종종 컨트롤 템플릿을 부분적으로 변경하거나 접근할 필요가 없을때가 있기에 모든것을 Visual tree와 연관지어서는 안된다. 이는 Logical tree가 더 적합하기 때문이다.
 
 ### The Logical Tree
-The logical tree describes the relations between elements of the user interface. The logical tree is responsible for:
-
-+ Inherit DependencyProperty values
-+ Resolving DynamicResources references
-+ Looking up element names for bindings
-+ Forwaring RoutedEvents
+logical tree는 사용자 인터페이스 요소 사이의 관계를 가지며, 다음과 같은 역활를 한다.
++ 의존 속성값의 상속
++ 동적 리소스 참조
++ 바인딩을 위한 요소이름의 탐색
++ 라우트된 이벤트 포워딩
 
 ### The Visual Tree
-
-The visual tree contains all logical elements including all visual elements of the template of each element. The visual tree is responsible for:
-+ Rendering visual elements
-+ Propagate element opacity
-+ Propagate Layout- and RenderTransforms
-+ Propagate the IsEnabled property.
-+ Do Hit-Testing
-+ RelativeSource (FindAncestor)
+visual tree는 각 요소의 시각적 요소(visual elements)들을 포함한 모든 논리 요소를 가지며, 다음과 같은 역활을 한다.
++ 시각적 요소 표현
++ 요소 투명도 처리
++ 레이아웃 및 RenderTransforms 처리
++ 활성화 속성 처리
++ 요소 선택여부 처리
++ 관련요소 탐색(FindAncestor)
 
 ### Programmatically Find an Ancestor in the Visual Tree
 
