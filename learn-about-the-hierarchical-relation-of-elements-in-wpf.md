@@ -18,13 +18,14 @@ WPF 사용자 인터페이스의 요소들은 계층적으로 관계를 갖는�
 </Window>
 ```
 
-### 왜 두개의 다른 종류의 구조가 필요할까?
+### 왜 두개의 다른 종류의 트리가 필요할까?
 
 WPF 컨트롤은 보기보다 여러개의 원시적인 컨트롤로 구성되어있다. 예를 들어보자. 버튼의 경우border(외곽선), rectangle(사각형), content presenter(내용을 표시하는 부분)으로 구성되어있다. 이 컨트롤들은 버튼의 시각화 자식들이다.
 
 WPF가 버튼을 만들때 그 요소들은 모습이 없지만, visual tree를 통해 반복되고 visual children을 만든다.또한, 이 계층적 관계는 hit-testing(요소를 선택했다고 인식하는것), 레이아웃, 기타등등을 수행하는데 사용되곤 한다.
 
 But sometimes you are not interested in the borders and rectangles of a controls' template. Particulary because the template can be replaced, and so you should not relate on the visual tree structure! Because of that you want a more robust tree that only contains the "real" controls - and not all the template parts. And that is the eligibility for the logical tree.
+그러나 가끔은 컨트롤 템플릿의 외곽선이나 사각형에 관심이 없을때가 있다. 따라서, 템플릿을 부분적으로 바꿀수 있기에 Visual Tree 구조와 관련되어서는 안된다. 템플릿 부분 전부가 아닌 "실제" 컨트롤을 포함하는 보다 더 완벽한 tree를 원하기 때문에 그것이 Logical tree가 적격이다.
 
 ### The Logical Tree
 The logical tree describes the relations between elements of the user interface. The logical tree is responsible for:
