@@ -40,11 +40,10 @@ visual tree는 각 요소의 시각적 요소(visual elements)들을 포함한 �
 + 요소 선택여부 처리
 + 관련요소 탐색(FindAncestor)
 
-### Programmatically Find an Ancestor in the Visual Tree
+### Programmatically Find an Ancestor in the Visual Tree (Visual Tree에서 상위를 찾는 프로그래밍 방법)
 
-If you are a child element of a user interface and you want to access data from a parent element, but you don't know how many levels up that elemens is, it's the best solution to navigate up the tree until it finds an element of the requested type.
-
-This helper does excactly this. You can use almost the same code to navigate through the logical tree.
+만약 사용자 인터페이스의 자식요소이고 부모요소로부터 데이터 접근을 원하는데 얼마나 많은 단계를 올라가야 할지 모른다면, 요청된 타입의 요소를 찾을때까지 tree를 상위탐색하는 가장 좋은 해결방법이다.
+helper는 정확하게 이것을 수행한다. 거의 동일한 코드를 사용하여 logical tree를 탐색할 수 있다. 
 
 ```
 public static class VisualTreeHelperExtensions
@@ -63,7 +62,7 @@ public static class VisualTreeHelperExtensions
 }
 ```
 
-The following example shows how to use the helper. It starts at this and navigates up the visual tree until it finds an element of type Grid. If the helper reaches the root element of the tree, it returns null.
+다음과 같은 예제는 어떻게 사용하는지를 보여준다. this에서 시작하여 Grid유형의 요소를 찾을때까지 visual tree를 상위 탐색한다. 만약 tree의 최상위요소에 다다르면 null을 반환한다.
 
 ```
 var grid = VisualTreeHelperExtensions.FindAncestor<Grid>(this);
