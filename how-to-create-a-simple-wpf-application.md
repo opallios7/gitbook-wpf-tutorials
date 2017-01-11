@@ -1,26 +1,27 @@
-# How to create a simple WPF application
+# How to create a simple WPF application (심플한 WPF 프로그램을 만들어보자)
 
-## In Visual Studio 2008
+## In Visual Studio 2008 (Visual Studio 2008 기준)
 
-Open Visual Studio 2008 and choose "File", "New", "Project..." in the main menu. Choose "WPF Application" as project type.
+Visual Studio 2008을 실행하고 상단 메뉴에서 File > New > Project를 선택한다. 그리고, 프로젝트 종류를 WPF Application로 선택한다.
 
-Choose a folder for your project and give it a name. Then press "OK"
+프로젝트를 위한 폴더를 선택하고 프로젝트 이름을 입력한다. 그리고 "OK"를 누른다.
 ![](/assets/hellowpf1.jpg)
 
-Visual Studio creates the project and automatically adds some files to the solution. A Window1.xaml and an App.xaml. The structure looks quite similar to WinForms, except that the Window1.designer.cs file is no longer code but it's now declared in XAML as Window1.xaml
+Visual Studio는 프로젝트를 생성하고 프로젝트 솔루션에 Window1.xaml과 App.xaml파일들이 자동으로 추가된다. 이 구조는 Window1.designer.cs파일이 더이상 코드가 아니라는 것만 빼고는 윈폼과 매우 비슷하지만  Window1.xaml처럼 XAML에 선언되어 있다. 
 
 ![](/assets/hellowpf2.jpg)
 
-Open the Window1.xaml file in the WPF designer and drag a Button and a TextBox from the toolbox to the Window
+WPF 디자이너에 있는 Window1.xaml파일을 열고 툴박스에서 버튼과 텍스트박스를 드래그한다.
+
 ![](/assets/hellowpf3.jpg)
 
-Select the Button and switch to the event view in the properties window (click on the little yellow lightning icon). Doubleclick on the "Click" event to create a method in the codebehind that is called, when the user clicks on the button.
+버튼을 선택하고 속성창에 이벤트를 생성하는 화면으로 바꾼다(노란색 번개 아이콘을 클릭). "Click"이벤트를 더블클릭하면 사용자가 버튼을 클릭할 때 호출되는 메소드가 생성된다.
 
-Note: If you do not find a yellow lightning icon, you need to install the Service Pack 1 for VisualStudio on your machine. Alternatively you can doubleclick on the button in the designer to achieve the same result.
+Note : 만약, 노랑색 번개 아이콘이 안보이면 Visual Studio Service Pack1을 설치해야 한다. 아니면 디자이너에서 버튼을 더블클릭하여 동일한 결과를 얻을 수 있다.
 
 ![](/assets/hellowpf4.jpg)
 
-Visual Studio automatically creates a method in the code-behind file that gets called when the button is clicked.
+Visual Studio는 다음과 같이 버튼을 클릭할때 호출되는 code-behind에 메소드를 자동으로 생성한다.
 
 ``` 
 private void button1_Click(object sender, RoutedEventArgs e)
@@ -29,9 +30,10 @@ private void button1_Click(object sender, RoutedEventArgs e)
 }
 ```
  
-The textbox has automatically become assigned the name textBox1 by the WPF designer. Set text Text to "Hello WPF!" when the button gets clicked and we are done! Start the application by hit [F5] on your keyboard.
+textbox는 WPF 디자이너에서 textBox1이라는 이름으로 자동생성된다. 위처럼 버튼을 클릭할 때 TextBox에 "Hello WPF"라고 보여지도록 코드를 입력하자! 그리고 [F5]를 눌러 어플리케이션을 실행해보자.
+
 ![](/assets/hellowpf5.jpg)
 
-Isn't this cool!
+멋지지 않은가?
 
 

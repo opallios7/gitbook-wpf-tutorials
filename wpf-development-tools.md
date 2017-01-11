@@ -1,4 +1,4 @@
-# WPF Development Tools
+# WPF Development Tools(WPF 개발 툴)
 
 Microsoft는 WPF를 위해 두개의 개발툴을 제공한다. 하나는 개발자를 위한 Visual Studio, 다른 하나는 디자이너를 위한 Expression Blend이다. Visual Studio는 코드와 XAML 편집기능이 있지만, 그라데이션, 템플릿 수정, 애니메이션, 기타등등과 같은 모든 그래픽 항목을 위한 지원은 부족하다. 그렇기에 Expression Blend가 있는 핵심이다. Blend는 그래픽부분을 매우 잘 보완하고 있지만 코드와 XAML 편집기능은 부족하다.
 

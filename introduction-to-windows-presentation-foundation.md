@@ -1,6 +1,6 @@
-# Introduction to Windows Presentation Foundation
+# Introduction to Windows Presentation Foundation (WPF 소개)
 
-## Overview
+## Overview (개요)
 
 Windows Presentation Foundation은 풍부한 사용자 경험을 담는 어플리케이션을 생성하는 Microsofts의 차세대 UI 프레임워크이다.
 
