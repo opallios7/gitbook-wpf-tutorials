@@ -112,19 +112,13 @@ private static bool OnValidateTimeProperty(object data)
  
 ### Readonly DependencyProperties (읽기전용 의존적 프로퍼티)
 
-Some dependency property of WPF controls are readonly. They are often used to report the state of a control, like the IsMouseOver property. Is does not make sense to provide a setter for this value.
-
 몇몇의 WPF컨트롤의 의존적 프로퍼티는 읽기전용이다. 그것들은 IsMouseOver프로퍼티와 같이 컨트롤의 상태를 보고하는데 자주 사용되곤한다. 이 값을 위해 setter를 제공하는 것은 말이 되지 않는다.
-
-Maybe you ask yourself, why not just use a normal .NET property? One important reason is that you cannot set triggers on normal .NET propeties.
 
 아마도 "왜 그냥 일반적인 .NET프로퍼티를 사용하면 안되지?"라고 자문을 할 것이다. 한가지 중요한 이유는 일반적인 .NET 프로퍼티는 trigger를 설정할 수가 없다.
 
-Creating a read only property is similar to creating a regular DependencyProperty. Instead of calling DependencyProperty.Register() you call DependencyProperty.RegisterReadonly(). This returns you a DependencyPropertyKey. This key should be stored in a private or protected static readonly field of your class. The key gives you access to set the value from within your class and use it like a normal dependency property.
+읽기전용 프로퍼티 생성은 보통 의존적인 프로퍼티의 생성과 비슷하다. DependencyProperty.Register()를 호출하는 대신에 DependencyProperty.RegisterReadonly()를 호출한다. 이것은 의존적프로퍼티 키를 반환한다. 이 키는 당신의 클래스 필드에 private또는 protected static readonly로 저장되어진다. 키는 당신의 클래스에 있는 값을 설정하기위한 접근과 일반적인 의존적 프로퍼티처럼 사용하도록 한다.
 
-읽기전용 프로퍼티 생성은 보통 의존적인 프로퍼티의 생성과 비슷하다. DependencyProperty.Register()를 호출하는 대신에 DependencyProperty.RegisterReadonly()를 호출한다. 
-
-Second thing to do is registering a public dependency property that is assigned to DependencyPropertyKey.DependencyProperty. This property is the readonly property that can be accessed from external.
+두번째로 할일은 DependencyPropertyKey.DependencyProperty에 할당된 공개 의존적인 프로퍼티를 등록한다. 이 프로퍼티는 외부에서 접근할 수 있는 읽기전용 프로퍼티이다.
 
 ``` 
 // Register the private key to set the value
