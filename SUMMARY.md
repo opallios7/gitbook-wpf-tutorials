@@ -7,4 +7,5 @@
 * [How to create a simple WPF application](how-to-create-a-simple-wpf-application.md)
 * [Introduction to XAML](introduction-to-xaml.md)
 * [Dependency Properties](dependency-properties.md)
+* [Routed Events](routed-events.md)
 
