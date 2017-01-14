@@ -116,9 +116,11 @@ WPF는 GridSplitter라 불리는 컨트롤을 제공한다. 이 컨트롤은 다
 </ItemsControl>
 ``` 
  
-### Useful Hints
+### Useful Hints (유용한 힌트기능)
 
 Columns and rows that participate in size-sharing do not respect Star sizing. In the size-sharing scenario, Star sizing is treated as Auto. Since TextWrapping on TextBlocks within an SharedSize column does not work you can exclude your last column from the shared size. This often helps to resolve the problem.
+
+크기 조정공유에 참여하는 열과 행은 별 크기조정을 고려하지 않는다.
 
 ### Using GridLenghts from code
 
