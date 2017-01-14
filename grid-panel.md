@@ -116,15 +116,13 @@ WPF는 GridSplitter라 불리는 컨트롤을 제공한다. 이 컨트롤은 다
 </ItemsControl>
 ``` 
  
-### Useful Hints (유용한 힌트기능)
+### Useful Hints (유용한 힌트)
 
-Columns and rows that participate in size-sharing do not respect Star sizing. In the size-sharing scenario, Star sizing is treated as Auto. Since TextWrapping on TextBlocks within an SharedSize column does not work you can exclude your last column from the shared size. This often helps to resolve the problem.
+크기 조정공유에 참여하는 열과 행은 별 크기조정을 고려하지 않는다. 크기조정공유 시나리오는 별크기조정은 자동으로 처리된다. 공유된 크기조정 컬럼내의 텍스트블럭에 대한 TextWrapping이 작동하지 않으므로 마지막 컬럼을 공유크기조정에서 제외할 수 있다. 이것은 종종 문제를 해결하는데 도움이 된다.
 
-크기 조정공유에 참여하는 열과 행은 별 크기조정을 고려하지 않는다.
+### Using GridLenghts from code (코드에서 GridLength 사용)
 
-### Using GridLenghts from code
-
-If you want to add columns or rows by code, you can use the GridLength class to define the differenz types of sizes.
+코드에서 열 또는 행을 추가하고 싶다면 GridLength 클래스를 다른 형식의 크기로 정의하여 사용할 수 있다.
 
 <b>sized</b>	GridLength.Auto
 
@@ -144,6 +142,6 @@ grid.ColumnDefinitions.Add(col1);
 grid.ColumnDefinitions.Add(col2);
 ```
  
-### More on this topic
+### More on this topic (추가내용)
 
 [How to create a resizable column](http://www.wpftutorial.net/GridSplitter.html)
