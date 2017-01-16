@@ -12,4 +12,5 @@
 * [Grid Panel](grid-panel.md)
 * [StackPanel](stackpanel.md)
 * [What's new in XAML of .NET 4.0](whats-new-in-xaml-of-net-40.md)
+* [Minimal Hardware and Software Requirements for WPF](minimal-hardware-and-software-requirements-for-wpf.md)
 
