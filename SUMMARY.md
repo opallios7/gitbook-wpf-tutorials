@@ -11,4 +11,5 @@
 * [Introduction to WPF Layout](introduction-to-wpf-layout.md)
 * [Grid Panel](grid-panel.md)
 * [StackPanel](stackpanel.md)
+* [What's new in XAML of .NET 4.0](whats-new-in-xaml-of-net-40.md)
 
