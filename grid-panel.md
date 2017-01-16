@@ -144,4 +144,4 @@ grid.ColumnDefinitions.Add(col2);
  
 ### More on this topic (추가내용)
 
-[How to create a resizable column](http://www.wpftutorial.net/GridSplitter.html)
+[크기조정이 가능한 컬럼 생성방법](http://www.wpftutorial.net/GridSplitter.html)
