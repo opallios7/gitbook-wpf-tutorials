@@ -10,4 +10,5 @@
 * [Routed Events](routed-events.md)
 * [Introduction to WPF Layout](introduction-to-wpf-layout.md)
 * [Grid Panel](grid-panel.md)
+* [StackPanel](stackpanel.md)
 
