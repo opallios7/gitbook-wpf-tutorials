@@ -18,4 +18,5 @@
 * [How to implement undo\/redo using MVVM](how-to-implement-undoredo-using-mvvm.md)
 * [The Model-View-ViewModel Pattern](the-model-view-viewmodel-pattern.md)
 * [A reference architecture for large WPF projects](a-reference-architecture-for-large-wpf-projects.md)
+* [How to implement a reusable ICommand](how-to-implement-a-reusable-icommand.md)
 
