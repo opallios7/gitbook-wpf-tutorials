@@ -15,4 +15,5 @@
 * [Minimal Hardware and Software Requirements for WPF](minimal-hardware-and-software-requirements-for-wpf.md)
 * [WPF Troubleshooting](wpf-troubleshooting.md)
 * [User Experience Design Process](user-experience-design-process.md)
+* [How to implement undo\/redo using MVVM](how-to-implement-undoredo-using-mvvm.md)
 
