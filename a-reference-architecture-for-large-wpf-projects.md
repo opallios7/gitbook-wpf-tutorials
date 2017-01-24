@@ -1,0 +1,1 @@
+# A reference architecture for large WPF projects
