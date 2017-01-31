@@ -23,7 +23,7 @@
 * [WPF Radio Button](wpf-radio-button.md)
 * [ToolTips in WPF](tooltips-in-wpf.md)
 * [WPF Expander Control](wpf-expander-control.md)
-* Menus in WPF
+* [Menus in WPF](menus-in-wpf.md)
 * Popup Control
 * WPF Calendar Control
 
