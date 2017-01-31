@@ -24,6 +24,6 @@
 * [ToolTips in WPF](tooltips-in-wpf.md)
 * [WPF Expander Control](wpf-expander-control.md)
 * [Menus in WPF](menus-in-wpf.md)
-* Popup Control
+* [Popup Control](popup-control.md)
 * WPF Calendar Control
 
