@@ -25,5 +25,5 @@
 * [WPF Expander Control](wpf-expander-control.md)
 * [Menus in WPF](menus-in-wpf.md)
 * [Popup Control](popup-control.md)
-* WPF Calendar Control
+* [WPF Calendar Control](wpf-calendar-control.md)
 
