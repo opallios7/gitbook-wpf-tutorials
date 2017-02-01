@@ -40,4 +40,5 @@
 * [How to apply a DataTemplate to a ListBox](how-to-apply-a-datatemplate-to-a-listbox.md)
 * [WPF ListView Control](wpf-listview-control.md)
 * [WPF TextBlock Control](wpf-textblock-control.md)
+* [WPF Window](wpf-window.md)
 
