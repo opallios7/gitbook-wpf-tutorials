@@ -39,4 +39,5 @@
 * [How to strech an WPF ListBox Item to span the whole width](how-to-strech-an-wpf-listbox-item-to-span-the-whole-width.md)
 * [How to apply a DataTemplate to a ListBox](how-to-apply-a-datatemplate-to-a-listbox.md)
 * [WPF ListView Control](wpf-listview-control.md)
+* [WPF TextBlock Control](wpf-textblock-control.md)
 
