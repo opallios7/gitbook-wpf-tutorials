@@ -36,4 +36,5 @@
 * [WPF ListBox Control](wpf-listbox-control.md)
 * [Change the Background of a selected ListBox Item](change-the-background-of-a-selected-listbox-item.md)
 * [Change the arrangement of items in a listbox](change-the-arrangement-of-items-in-a-listbox.md)
+* [How to strech an WPF ListBox Item to span the whole width](how-to-strech-an-wpf-listbox-item-to-span-the-whole-width.md)
 
