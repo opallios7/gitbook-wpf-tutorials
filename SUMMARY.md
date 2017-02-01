@@ -37,4 +37,5 @@
 * [Change the Background of a selected ListBox Item](change-the-background-of-a-selected-listbox-item.md)
 * [Change the arrangement of items in a listbox](change-the-arrangement-of-items-in-a-listbox.md)
 * [How to strech an WPF ListBox Item to span the whole width](how-to-strech-an-wpf-listbox-item-to-span-the-whole-width.md)
+* [How to apply a DataTemplate to a ListBox](how-to-apply-a-datatemplate-to-a-listbox.md)
 
