@@ -33,4 +33,5 @@
 * [WPF PasswordBox Control](wpf-passwordbox-control.md)
 * [WPF DataGrid Control](wpf-datagrid-control.md)
 * [Context Menus in WPF](context-menus-in-wpf.md)
+* [WPF ListBox Control](wpf-listbox-control.md)
 
