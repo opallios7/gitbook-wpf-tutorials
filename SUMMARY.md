@@ -34,4 +34,5 @@
 * [WPF DataGrid Control](wpf-datagrid-control.md)
 * [Context Menus in WPF](context-menus-in-wpf.md)
 * [WPF ListBox Control](wpf-listbox-control.md)
+* [Change the Background of a selected ListBox Item](change-the-background-of-a-selected-listbox-item.md)
 
