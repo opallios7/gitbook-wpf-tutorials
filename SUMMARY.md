@@ -28,4 +28,5 @@
 * [WPF Calendar Control](wpf-calendar-control.md)
 * [ItemsControl](itemscontrol.md)
 * [ComboBox with Live Preview](combobox-with-live-preview.md)
+* [WPF Slider Control](wpf-slider-control.md)
 
