@@ -31,4 +31,5 @@
 * [WPF Slider Control](wpf-slider-control.md)
 * [Dialogs in WPF](dialogs-in-wpf.md)
 * [WPF PasswordBox Control](wpf-passwordbox-control.md)
+* [WPF DataGrid Control](wpf-datagrid-control.md)
 
